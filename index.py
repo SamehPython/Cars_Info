@@ -36,7 +36,7 @@ class MainApp(QMainWindow,form_class):
         try:
             self.cnx = mysql.connector.connect(user='root', password='01234',
                                       host='127.0.0.1',
-                                      database='cars_db')
+                                      database='mydb')
             self.cursor = self.cnx.cursor()
 
         except mysql.connector.Error as err:
